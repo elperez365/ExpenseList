@@ -1,0 +1,41 @@
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.new-expense__control {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+  }
+}
+.new-expense__actions {
+  text-align: right;
+  button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    &:hover,
+    &:active {
+      background-color: #510678;
+      border-color: #510678;
+    }
+  }
+}
