@@ -10,7 +10,7 @@ export default function ExpenseItem({ title, amount, date }) {
         <h2>{title}</h2>
         <div className="expense-item__price">{amount}</div>
       </div>
-      <button>Change title</button>
+      {/* <button>Change title</button> */}
     </Card>
   );
 }
