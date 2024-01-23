@@ -4,6 +4,7 @@ import ExpenseFilter from "./ExpenseFilter";
 import "./Expenses.css";
 import { range, yearMin } from "../../data/data";
 import ExpenseList from "./ExpenseList";
+import ExpenseChart from "./ExpenseChart";
 
 export default function Expenses({ expenses }) {
   const [filteredYear, setFilteredYear] = useState("2020");
@@ -22,6 +23,7 @@ export default function Expenses({ expenses }) {
         onChange={(e) => setFilteredYear(e.target.value)}
         value={filteredYear}
       />
+      <ExpenseChart expenses={filteredExpenses} />
 
       <ExpenseList
         filteredExpenses={filteredExpenses}
